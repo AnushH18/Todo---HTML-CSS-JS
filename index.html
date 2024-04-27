@@ -1,0 +1,39 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Drag & Drop todo</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div id="main-body" >
+            <form action="" id="todo-form">
+                <input type="text" placeholder="Add todo.." id="todo-input">
+                <button id="todo-btn" type="submit">Add +</button>
+                <button id="todo-remove" type="submit">Remove -</button>
+            </form>
+
+            <div class="lanes">
+                <div id="todo-hold" class="lane">
+                    <h3 class="heading">TODO</h3>
+                    <!-- <p class="task" draggable="true">task-1</p>
+                    <p class="task" draggable="true">task-2</p>
+                    <p class="task" draggable="true">task-3</p> -->
+                </div>
+                <div id="doing" class="lane">
+                    <h3 class="heading">Doing</h3>
+                    <!-- <p class="task" draggable="true">task-x</p> -->
+                </div>
+                <div id="done" class="lane">
+                    <h3 class="heading">Done</h3>
+                    <!-- <p class="task" draggable="true">task-y</p> -->
+                </div>
+            </div>
+        </div>
+
+        <script src="todo.js"></script>
+        <script src="drag.js"></script>
+    </body>
+    </html>
